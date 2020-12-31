@@ -1,15 +1,12 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import cart from './modules/cart/cart'
 
 Vue.use(Vuex)
-
-export default new Vuex.Store({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
+const store = new Vuex.Store({
   modules: {
+    cart
   }
+
 })
+export default store
