@@ -31,5 +31,6 @@ export default {
 .button {
   border-color: red;
   background-color: red;
+  
 }
 </style>
