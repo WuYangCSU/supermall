@@ -1,10 +1,14 @@
 <template>
   <div>
-    我的
+    <profile-nav-bar></profile-nav-bar>
+    <profile-user></profile-user>
   </div>
 </template>
 
 <script>
+import ProfileUser from "./profileChildren/ProfileUser";
+import ProfileNavBar from "./profileChildren/ProfileNavBar"
+
 export default {
   name: '',
   data() {
@@ -13,10 +17,13 @@ export default {
     }
   },
   components: {
+ProfileUser,
+ProfileNavBar
 
   }
 }
 </script>
+    ProfileNavBar
 
 <style scoped>
 </style>
