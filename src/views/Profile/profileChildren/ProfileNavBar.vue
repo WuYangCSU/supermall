@@ -26,5 +26,7 @@ export default {
 }
 .set_up {
   text-align: center;
+  line-height: 44px;
+  font-size: 18px;
 }
 </style>

@@ -16,14 +16,20 @@ export default {
 <style scoped>
 .user_info {
   display: flex;
-  background-color: gray;
+  color: #999;
 }
 .user_img {
   
-  height: 60px;
+  height: 50px;
+  margin: 10px 20px 10px 10px ;
 }
 .user_img img {
   border-radius: 50px;
-  height: 60px;
+  height: 50px;
+}
+.user_status{
+  line-height: 70px;
+  text-align: center;
+  font-size: 20px;
 }
 </style>
