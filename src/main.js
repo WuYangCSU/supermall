@@ -5,7 +5,10 @@ import store from '@/store'
 import toast from '@/components/common/toast/index.js'
 import FastClick from 'fastclick'
 import VueLazyload from 'vue-lazyload'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css';
 FastClick.attach(document.body)
+Vue.use(ElementUI)
 Vue.use(toast)
 Vue.use(VueLazyload, {
   loading: require('@/assets/img/common/placeholder.png')

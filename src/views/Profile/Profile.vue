@@ -1,7 +1,7 @@
 <template>
   <div class="profile">
     <profile-nav-bar></profile-nav-bar>
-    <profile-user></profile-user>
+    <profile-user @userLogin="userLogin"></profile-user>
     <profile-user-info></profile-user-info>
     <profile-user-orders></profile-user-orders>
   </div>
@@ -23,6 +23,11 @@ export default {
     ProfileUserInfo,
     ProfileUserOrders,
   },
+  methods:{
+    userLogin(){
+      this.$router.push("/login")
+    }
+  }
 };
 </script>
 <style scoped>
