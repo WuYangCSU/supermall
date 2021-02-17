@@ -8,7 +8,7 @@ const Category = () => import('@/views/Category/Category')
 const Profile = () => import('@/views/Profile/Profile')
 const Shopcart = () => import('@/views/Shopcart/Shopcart')
 const Details = () => import('@/views/Details/Details')
-const Login =()=>import('@/views/Login')
+const Login = () => import('@/views/Login')
 const routes = [
   {
     path: '',
@@ -24,6 +24,7 @@ const routes = [
   },
   {
     path: '/profile',
+    name: "profile",
     component: Profile
   },
   {
@@ -35,8 +36,8 @@ const routes = [
     component: Details
   },
   {
-    path:'/login',
-    component:Login
+    path: '/login',
+    component: Login
   }
 ]
 

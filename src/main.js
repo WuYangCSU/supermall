@@ -7,6 +7,7 @@ import FastClick from 'fastclick'
 import VueLazyload from 'vue-lazyload'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css';
+import '@/mock/index.js'
 FastClick.attach(document.body)
 Vue.use(ElementUI)
 Vue.use(toast)
