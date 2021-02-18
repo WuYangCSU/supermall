@@ -1,16 +1,26 @@
 <template>
   <div>
-    <div>
+    <div v-if="hastoken">
       <div class="user_info">
-        <div class="user_img" @click="userLogin">
+        <div class="user_img">
           <img src="http://static.hdslb.com/images/akari.jpg" alt="" />
         </div>
-        <div class="user_status" @click="userLogin">
-          <div class="userName" v-if="userName">{{userName}}</div>
-          <div v-else>登录/注册</div>
+        <div class="user_status">
+          <div class="userName">{{userName}}</div>
         </div>
       </div>
     </div>
+    <div v-else>
+      <div class="user_info">
+        <div class="user_img">
+          <img @click="userLogin" src="http://static.hdslb.com/images/akari.jpg" alt="" />
+        </div>
+        <div class="user_status">
+          <div @click="userLogin">登录/注册</div>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 
 </template>

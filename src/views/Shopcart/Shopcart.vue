@@ -34,7 +34,6 @@ export default {
   activated() {
 
     this.$refs.scroll.refresh()
-    console.log(this.$refs.scroll.bscroll);
   },
   components: {
     BScroll,

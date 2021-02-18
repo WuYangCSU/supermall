@@ -40,7 +40,11 @@ export default {
       }
 
       this.userLogin(loginForm).then(res => {
-        this.$router.push('profile')
+        if (res === 200) {
+          this.$router.push({
+            path: this.$route.params.redirect
+          })
+        }
       })
     },
     register() {

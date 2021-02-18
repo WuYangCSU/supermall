@@ -25,8 +25,9 @@ const user = {
     login({ commit }, loginForm) {
       return new Promise((resolve, reject) => {
         const { userName } = loginForm
+        let code = null
         userLogin(loginForm).then(res => {
-          const { code } = res
+          code = res.code
           if (code == 200) {
             if (res.data) {
               commit(SET_TOKEN, res.data.token)
@@ -39,8 +40,9 @@ const user = {
               alert(res.message)
             }
           }
+          resolve(code)
         })
-        resolve()
+
       })
     }
   }
