@@ -15,6 +15,7 @@ Vue.use(VueLazyload, {
   loading: require('@/assets/img/common/placeholder.png')
 })
 Vue.config.productionTip = false
+document.title="快乐购商城"
 Vue.prototype.$bus = new Vue()
 new Vue({
   render: h => h(App),

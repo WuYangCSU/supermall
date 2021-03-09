@@ -17,12 +17,18 @@ const Login = () => import('@/views/Login')
 const routes = [
   {
     path: '',
-    redirect: '/home'
+    redirect: '/home',
+    meta:{
+      title:"快乐购商城"
+    }
   },
   {
     path: '/home',
     name: 'home',
-    component: Home
+    component: Home,
+    meta:{
+      title:"快乐购商城"
+    }
   },
   {
     path: '/category',
